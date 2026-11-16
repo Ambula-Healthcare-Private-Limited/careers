@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ambula Careers – Paradeep</title>
+<meta name="description" content="Apply for Lab Technician (MLT) and X-Ray Technician (MRT) openings at Ambula Healthcare's Diagnostic Center, JSW Utkal Steel Project Site, Paradeep.">
+<meta name="theme-color" content="#0743A1">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hiring: Lab Technician (MLT) & X-Ray Technician (MRT) – Paradeep">
+<meta property="og:description" content="Ambula Healthcare Diagnostic Center, JSW Utkal Steel Project Site, Paradeep. Free bachelor accommodation + subsidised food. Apply online in 3 minutes.">
+<meta property="og:image" content="https://ambula.app/assets/logo-fde743f5.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="https://ambula.app/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<style>
+/* Layout: one 720px column on Ambula's lavender-blue wash. Job brief with JD, then a 5-step form.
+   Palette and type follow ambula.app: navy #0743A1 → #4F8FFF gradient, logo red, Inter, pill buttons. Light theme by design, like the website. */
+:root{
+  --bg:#F4F6FF; --wash:#E8EDFF; --surface:#FFFFFF; --ink:#1F2937; --muted:#4B5563; --line:#E5E7EB;
+  --navy:#0743A1; --blue:#4F8FFF; --deep:#0A2A5A; --red:#D92A3A; --tint:#EAF1FF; --tint-2:#ECF8FF;
+  --danger:#D92A3A; --ok:#059669;
+  --grad:linear-gradient(90deg,#0743A1,#4F8FFF);
+  --font:"Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;background:var(--bg)}
+body{margin:0;color:var(--ink);font:15px/1.55 var(--font);
+  background:linear-gradient(180deg,var(--wash) 0,var(--tint-2) 380px,var(--bg) 760px);
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));
+  padding-block:max(20px, env(safe-area-inset-top, 0px)) 56px}
+.wrap{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+h1,h2,h3{text-wrap:balance;margin:0;line-height:1.2;color:var(--ink)}
+a{color:var(--navy)}
+
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:4px 2px}
+.logo-link{display:inline-flex;border-radius:8px}
+.logo-link:focus-visible{outline:3px solid rgba(79,143,255,.45);outline-offset:4px}
+.logo{height:34px;width:auto;display:block}
+.logo-text{font:800 24px/1 var(--font);letter-spacing:.06em;color:var(--deep)}
+.logo-text b{color:var(--red)}
+.hiring{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--navy);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 12px}
+
+/* Job brief */
+.brief{background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 10px 30px -18px rgba(7,67,161,.35)}
+.brief-top{padding:24px 24px 20px;display:flex;flex-direction:column;gap:10px}
+.org{font-size:13px;font-weight:600;color:var(--muted)}
+.brief h1{font-size:clamp(26px,5.5vw,36px);font-weight:800}
+.brief h1 span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.site{color:var(--muted);margin:0}
+.jd{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
+.role{padding:18px 24px 20px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.role + .role{border-left:1px solid var(--line)}
+.role-head{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.code{font-size:12px;font-weight:700;color:#fff;background:var(--red);border-radius:6px;padding:2px 7px;letter-spacing:.06em}
+.role h3{font-size:17px;font-weight:700}
+.role h4{margin:4px 0 0;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--navy)}
+.role ul{margin:0;padding-left:18px;color:var(--muted);font-size:14px;display:flex;flex-direction:column;gap:3px}
+.perks{display:flex;flex-wrap:wrap;gap:8px 14px;padding:14px 24px;border-top:1px solid var(--line);background:var(--tint)}
+.perk{display:inline-flex;align-items:center;gap:6px;font-size:13.5px;font-weight:600;color:var(--deep)}
+.perk svg{color:var(--ok);flex:none}
+.contact{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;padding:14px 24px;border-top:1px solid var(--line);font-size:14px}
+.contact .lbl{color:var(--muted);font-weight:500}
+.contact a{display:inline-flex;align-items:center;gap:6px;font-weight:600;text-decoration:none;color:var(--navy);min-height:40px;padding:0 14px;border:1px solid #C9D8FF;border-radius:999px;background:var(--tint)}
+.contact a:hover{background:#DCE7FF}
+.apply-now{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;margin-top:6px;font-weight:700;font-size:15px;color:#fff;background:var(--grad);border-radius:50px;padding:0 22px;min-height:46px;text-decoration:none;box-shadow:0 8px 20px -10px rgba(7,67,161,.7)}
+html{scroll-behavior:smooth;scroll-padding-top:12px}
+@media (max-width:480px){
+  body{font-size:15px}
+  .brief-top,.role,.perks,.contact{padding-left:18px;padding-right:18px}
+  fieldset{padding:18px 16px 20px;border-radius:16px}
+  .brief{border-radius:16px}
+  .contact{flex-direction:column;align-items:stretch}
+  .contact a{justify-content:center}
+  .apply-now{align-self:stretch;justify-content:center}
+  .logo{height:28px}
+  button.submit{max-width:none}
+}
+.contact svg{flex:none}
+@media (max-width:600px){.jd{grid-template-columns:1fr}.role + .role{border-left:0;border-top:1px solid var(--line)}}
+
+/* Form */
+.intro{margin:4px 2px 0;color:var(--muted);font-size:14px}
+form{display:flex;flex-direction:column;gap:18px}
+fieldset{margin:0;border:1px solid var(--line);border-radius:18px;background:var(--surface);padding:22px 24px 24px;display:flex;flex-direction:column;gap:16px;min-width:0}
+legend{float:left;width:100%;padding:0;display:flex;align-items:center;gap:10px;font-size:18px;font-weight:700}
+legend .n{font-size:13px;font-weight:700;color:#fff;background:var(--grad);border-radius:999px;width:28px;height:28px;display:grid;place-items:center;flex:none}
+legend + *{clear:both}
+.hint{margin:0;color:var(--muted);font-size:13.5px;font-weight:400}
+.opt{color:#6B7280;font-weight:400;font-size:13px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 16px}
+.full{grid-column:1/-1}
+@media (max-width:560px){.grid{grid-template-columns:1fr}}
+.field{display:flex;flex-direction:column;gap:6px;min-width:0}
+label,.lbl{font-weight:600;font-size:14px}
+.req::after{content:" *";color:var(--danger)}
+input[type=text],input[type=email],input[type=tel],input[type=date],input[type=number],select,textarea{
+  width:100%;font:inherit;font-size:16px;color:var(--ink);background:#F9FAFB;border:1px solid #D1D5DB;border-radius:10px;padding:10px 12px;min-height:46px}
+input:focus,select:focus,textarea:focus{border-color:var(--blue);background:#fff}
+textarea{min-height:80px;resize:vertical}
+input:focus-visible,select:focus-visible,textarea:focus-visible,button:focus-visible{outline:3px solid rgba(79,143,255,.45);outline-offset:1px}
+.field.bad input,.field.bad select,.field.bad textarea{border-color:var(--danger)}
+.err{color:var(--danger);font-size:13px}
+.err:empty{display:none}
+
+.positions{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:560px){.positions{grid-template-columns:1fr}}
+.pos{display:flex;gap:12px;align-items:center;border:1.5px solid var(--line);border-radius:14px;padding:14px 16px;cursor:pointer;background:#F9FAFB}
+.pos input{accent-color:var(--navy);width:20px;height:20px;flex:none;margin:0}
+.pos b{display:block;font-size:16px}
+.pos small{color:var(--muted)}
+.pos:has(input:checked){border-color:var(--navy);background:var(--tint)}
+.pos:has(input:focus-visible){outline:3px solid rgba(79,143,255,.45);outline-offset:1px}
+
+.choices{display:flex;flex-wrap:wrap;gap:8px}
+.choice{display:inline-flex;align-items:center;gap:8px;border:1px solid #D1D5DB;border-radius:999px;padding:9px 14px;cursor:pointer;font-size:14px;background:#F9FAFB;min-height:42px}
+.choice input{accent-color:var(--navy);margin:0;width:16px;height:16px}
+.choice:has(input:checked){border-color:var(--navy);background:var(--tint);color:var(--navy);font-weight:600}
+.choice:has(input:focus-visible){outline:3px solid rgba(79,143,255,.45);outline-offset:1px}
+.wa{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;font-weight:500;color:var(--muted);cursor:pointer}
+.wa input{accent-color:var(--navy);width:16px;height:16px;margin:0}
+.placeholder{padding:14px 16px;border-radius:12px;background:var(--tint);color:var(--deep);font-size:14px}
+
+.file{border:1.5px dashed #C9D8FF;border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:6px;background:var(--tint)}
+.decl{display:flex;gap:12px;align-items:flex-start;font-size:14px;font-weight:500}
+.decl input{width:18px;height:18px;margin-top:2px;accent-color:var(--navy);flex:none}
+
+.actions{display:flex;flex-direction:column;gap:10px;align-items:center}
+button.submit{font:700 17px/1 var(--font);color:#fff;background:var(--grad);border:0;border-radius:50px;padding:16px 40px;cursor:pointer;min-height:54px;width:100%;max-width:360px;box-shadow:0 10px 24px -12px rgba(7,67,161,.7)}
+button.submit:hover{filter:brightness(1.08)}
+button.submit[disabled]{opacity:.6;cursor:progress}
+.status{font-size:14px;text-align:center;color:var(--muted);margin:0}
+.status.error{color:var(--danger)}
+
+.done{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:32px 24px;display:flex;flex-direction:column;gap:12px;text-align:center;align-items:center}
+.done .tick{width:54px;height:54px;border-radius:50%;background:#D1FAE5;display:grid;place-items:center;color:var(--ok)}
+.ref{font:600 15px/1 ui-monospace, Menlo, monospace;padding:8px 12px;border-radius:8px;background:var(--tint);color:var(--navy)}
+footer{display:flex;flex-direction:column;gap:4px;text-align:center;color:var(--muted);font-size:13px}
+footer a{font-weight:600;text-decoration:none}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <a class="logo-link" href="https://ambula.app" target="_blank" rel="noopener" title="Visit ambula.app">
+      <img class="logo" src="assets/ambula-logo.png" alt="Ambula – visit ambula.app" onerror="this.onerror=null;this.src='https://ambula.app/assets/logo-fde743f5.png';this.addEventListener('error',()=>{this.replaceWith(Object.assign(document.createElement('span'),{className:'logo-text',innerHTML:'A<b>M</b>BULA'}))},{once:true})">
+    </a>
+    <span class="hiring">We're hiring</span>
+  </div>
+
+  <header class="brief">
+    <div class="brief-top">
+      <div class="org">Ambula Healthcare Pvt Ltd · Diagnostic Center</div>
+      <h1>Lab &amp; X-Ray <span>Technicians</span> for Paradeep</h1>
+      <p class="site">Occupational Health Centres (OHCs), JSW Utkal Steel Ltd Project Site, Paradeep, Odisha</p>
+      <a class="apply-now" href="#app">Apply now
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a>
+    </div>
+
+    <div class="jd">
+      <section class="role" aria-labelledby="jd-mlt">
+        <div class="role-head"><span class="code">MLT</span><h3 id="jd-mlt">Lab Technician</h3></div>
+        <h4>What you'll do</h4>
+        <ul>
+          <li>Collect blood and urine samples from workers</li>
+          <li>Run CBC, blood grouping and biochemistry tests</li>
+          <li>Operate and maintain lab analysers; run daily QC</li>
+          <li>Enter reports accurately and on time</li>
+        </ul>
+        <h4>Who can apply</h4>
+        <ul>
+          <li>DMLT / B.Sc MLT or equivalent</li>
+          <li>Freshers and experienced candidates</li>
+        </ul>
+      </section>
+      <section class="role" aria-labelledby="jd-mrt">
+        <div class="role-head"><span class="code">MRT</span><h3 id="jd-mrt">X-Ray Technician</h3></div>
+        <h4>What you'll do</h4>
+        <ul>
+          <li>Take chest X-rays for pre-employment medicals</li>
+          <li>Handle CR / DR and portable X-ray units</li>
+          <li>Follow radiation safety (AERB) rules</li>
+          <li>Print, store and share X-ray images</li>
+        </ul>
+        <h4>Who can apply</h4>
+        <ul>
+          <li>DMRT / B.Sc Radiology or equivalent</li>
+          <li>Freshers and experienced candidates</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="perks">
+      <span class="perk"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Salary as per market standard</span>
+      <span class="perk"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Free bachelor accommodation</span>
+      <span class="perk"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Subsidised food</span>
+    </div>
+
+    <div class="contact">
+      <span class="lbl">Questions? Contact us:</span>
+      <a href="mailto:support@ambula.app"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>support@ambula.app</a>
+      <a href="tel:+918144301610"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>+91-8144301610</a>
+    </div>
+  </header>
+
+  <p class="intro">Takes about 3 minutes. Fields marked <span style="color:var(--danger)">*</span> are required.</p>
+
+  <form id="app" novalidate>
+    <fieldset>
+      <legend><span class="n">1</span>Position</legend>
+      <div class="field">
+        <span class="lbl req">Which job are you applying for?</span>
+        <div class="positions">
+          <label class="pos"><input type="radio" name="position" id="pos-mlt" value="Lab Technician (MLT)" required><span><b>Lab Technician</b><small>MLT</small></span></label>
+          <label class="pos"><input type="radio" name="position" id="pos-mrt" value="X-Ray Technician (MRT)"><span><b>X-Ray Technician</b><small>MRT</small></span></label>
+        </div>
+        <span class="err" data-for="position"></span>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend><span class="n">2</span>About you</legend>
+      <div class="grid">
+        <div class="field full"><label for="fullName" class="req">Full name</label><input type="text" id="fullName" name="fullName" autocomplete="name" placeholder="As on your certificates" required><span class="err"></span></div>
+        <div class="field"><label for="mobile" class="req">Mobile number</label><input type="tel" id="mobile" name="mobile" inputmode="numeric" maxlength="10" placeholder="10-digit number" autocomplete="tel-national" required>
+          <label class="wa"><input type="checkbox" id="onWhatsapp" name="onWhatsapp" checked>This number is on WhatsApp</label><span class="err"></span></div>
+        <div class="field"><label for="email">Email <span class="opt">(optional)</span></label><input type="email" id="email" name="email" autocomplete="email"><span class="err"></span></div>
+        <div class="field"><label for="dob" class="req">Date of birth</label><input type="date" id="dob" name="dob" required><span class="err"></span></div>
+        <div class="field"><label for="gender" class="req">Gender</label>
+          <select id="gender" name="gender" required><option value="">Select</option><option>Male</option><option>Female</option><option>Other</option></select><span class="err"></span></div>
+        <div class="field full"><label for="location" class="req">Where do you live now?</label><input type="text" id="location" name="location" placeholder="Town / city, district – e.g. Kujang, Jagatsinghpur" required><span class="err"></span></div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend><span class="n">3</span>Education &amp; experience</legend>
+      <div class="grid">
+        <div class="field full"><label for="qualification" class="req">Qualification</label>
+          <select id="qualification" name="qualification" required><option value="">Choose a job in step 1 first</option></select><span class="err"></span></div>
+        <div class="field full" id="qualOtherWrap" hidden><label for="qualOther" class="req">Write your qualification</label><input type="text" id="qualOther" name="qualOther"><span class="err"></span></div>
+        <div class="field"><label for="institute" class="req">Institute / college</label><input type="text" id="institute" name="institute" required><span class="err"></span></div>
+        <div class="field"><label for="passYear" class="req">Year of passing</label><input type="number" id="passYear" name="passYear" min="1985" max="2027" inputmode="numeric" placeholder="e.g. 2022" required><span class="err"></span></div>
+        <div class="field full"><label for="regNo">Paramedical council registration no. <span class="opt">(if any)</span></label><input type="text" id="regNo" name="regNo"><span class="err"></span></div>
+        <div class="field"><label for="expYears" class="req">Work experience</label>
+          <select id="expYears" name="expYears" required><option value="">Select</option><option>Fresher</option><option>Less than 1 year</option><option>1–2 years</option><option>2–5 years</option><option>5+ years</option></select><span class="err"></span></div>
+        <div class="field"><label for="preEmpExp" class="req">Done pre-employment medicals before?</label>
+          <select id="preEmpExp" name="preEmpExp" required><option value="">Select</option><option>Yes, at an OHC / industrial site</option><option>Yes, at a hospital / lab</option><option>No</option></select><span class="err"></span></div>
+        <div class="field full" id="employerWrap" hidden><label for="employer">Current / last workplace</label><input type="text" id="employer" name="employer" placeholder="Hospital / lab / company name"><span class="err"></span></div>
+        <div class="field"><label for="currentSalary">Current salary (₹ / month) <span class="opt">(optional)</span></label><input type="number" id="currentSalary" name="currentSalary" min="0" inputmode="numeric" placeholder="e.g. 15000"><span class="err"></span></div>
+        <div class="field"><label for="notice" class="req">When can you join?</label>
+          <select id="notice" name="notice" required><option value="">Select</option><option>Immediately</option><option>Within 15 days</option><option>Within 30 days</option><option>After 30 days</option></select><span class="err"></span></div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend><span class="n">4</span>Your skills</legend>
+      <p class="hint" style="margin-top:-8px">Tick only what you have done hands-on.</p>
+      <div id="skillsPlaceholder" class="placeholder">Choose a job in step 1 to see the skills for that role.</div>
+      <div id="skillsArea" hidden>
+        <div class="grid">
+          <div class="field full"><span class="lbl">Tests you can do</span><div class="choices" id="tests"></div></div>
+          <div class="field full"><span class="lbl">Machines you have used</span><div class="choices" id="machines"></div></div>
+          <div class="field full"><span class="lbl">Languages you speak</span>
+            <div class="choices">
+              <label class="choice"><input type="checkbox" name="languages" id="lang-odia" value="Odia"><span>Odia</span></label>
+              <label class="choice"><input type="checkbox" name="languages" id="lang-hindi" value="Hindi"><span>Hindi</span></label>
+              <label class="choice"><input type="checkbox" name="languages" id="lang-english" value="English"><span>English</span></label>
+              <label class="choice"><input type="checkbox" name="languages" id="lang-bengali" value="Bengali"><span>Bengali</span></label>
+            </div></div>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend><span class="n">5</span>Resume &amp; submit</legend>
+      <div class="grid">
+        <div class="field full">
+          <label for="resume" class="file">
+            <span class="lbl">Upload resume <span class="opt">(optional)</span></span>
+            <span class="hint">PDF, Word file or a clear photo. Max 5 MB.</span>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png">
+          </label>
+          <span class="err" data-for="resume"></span>
+        </div>
+        <div class="field"><label for="source">How did you hear about this job?</label>
+          <select id="source" name="source"><option value="">Select</option><option>WhatsApp</option><option>Facebook / Instagram</option><option>LinkedIn</option><option>Job portal</option><option>Friend / colleague</option><option>College / institute</option><option>Other</option></select></div>
+        <div class="field"><label for="remarks">Anything else? <span class="opt">(optional)</span></label><input type="text" id="remarks" name="remarks" placeholder="Certifications, AERB training, etc."></div>
+        <div class="field full">
+          <label class="decl"><input type="checkbox" id="declare" name="declare" required><span>I confirm the details above are true. Original certificates will be checked at joining.</span></label>
+          <span class="err" data-for="declare"></span>
+        </div>
+      </div>
+    </fieldset>
+
+    <div class="actions">
+      <button type="submit" class="submit" id="submitBtn">Submit Application</button>
+      <p class="status" id="status" role="status" aria-live="polite"></p>
+    </div>
+  </form>
+
+  <section class="done" id="done" hidden>
+    <div class="tick"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+    <h2>Application received</h2>
+    <p style="margin:0;color:var(--muted)">Thank you, <span id="doneName"></span>. Our HR team will review your application and call shortlisted candidates for an interview.</p>
+    <span class="ref" id="doneRef"></span>
+    <p style="margin:0;color:var(--muted);font-size:13px">Keep this reference number. For any query, write to <a href="mailto:support@ambula.app">support@ambula.app</a> or call <a href="tel:+918144301610">+91-8144301610</a>.</p>
+  </section>
+
+  <footer>
+    <span>Queries: <a href="mailto:support@ambula.app">support@ambula.app</a> · <a href="tel:+918144301610">+91-8144301610</a></span>
+    <span>© Ambula Healthcare Pvt Ltd · <a href="https://ambula.app" target="_blank" rel="noopener">ambula.app</a></span>
+  </footer>
+</div>
+
+<script>
+/* ===== CONFIG: paste your Google Apps Script Web App URL here (see README) ===== */
+const SCRIPT_URL = "";
+/* =============================================================================== */
+
+const MAX_FILE_MB = 5;
+
+const ROLES = {
+  "Lab Technician (MLT)": {
+    quals: ["DMLT (Diploma in Medical Lab Technology)","B.Sc MLT / BMLT","M.Sc MLT","CMLT (Certificate course)","Other"],
+    tests: ["Blood sample collection","CBC","Blood grouping","Blood sugar","LFT / KFT","Lipid profile","Urine routine","Serology / rapid tests","ECG","PFT / Spirometry"],
+    machines: ["Haematology analyser (3-part / 5-part)","Fully automated biochemistry analyser","Electrolyte analyser","Centrifuge","Microscope","ECG machine","Spirometer (PFT)","Lab software / LIS"]
+  },
+  "X-Ray Technician (MRT)": {
+    quals: ["DMRT / Diploma in Radiography","B.Sc Radiology / BRIT / B.Sc MRIT","M.Sc Radiology / MRIT","Certificate in X-Ray Technology","Other"],
+    tests: ["Chest X-ray (PA view)","Spine X-ray","Limbs / joints X-ray","Skull / PNS X-ray","Portable / bedside X-ray","ECG","PFT / Spirometry"],
+    machines: ["CR system","DR system","Fixed X-ray unit (100–500 mA)","Portable X-ray unit","Dry laser / film printer","PACS / DICOM viewer","ECG machine","Spirometer (PFT)"]
+  }
+};
+
+const form = document.getElementById("app");
+const qualSel = document.getElementById("qualification");
+const qualOtherWrap = document.getElementById("qualOtherWrap");
+
+const chips = (name, list) => list.map((s,i) =>
+  `<label class="choice"><input type="checkbox" name="${name}" id="${name}-${i}" value="${s}"><span>${s}</span></label>`).join("");
+
+function setPosition(pos){
+  const r = ROLES[pos];
+  qualSel.innerHTML = '<option value="">Select</option>' + r.quals.map(q => `<option>${q}</option>`).join("");
+  qualOtherWrap.hidden = true;
+  document.getElementById("tests").innerHTML = chips("tests", r.tests);
+  document.getElementById("machines").innerHTML = chips("machines", r.machines);
+  document.getElementById("skillsPlaceholder").hidden = true;
+  document.getElementById("skillsArea").hidden = false;
+}
+form.querySelectorAll('input[name="position"]').forEach(r => r.addEventListener("change", e => { setPosition(e.target.value); clearErr("position"); }));
+qualSel.addEventListener("change", () => { qualOtherWrap.hidden = qualSel.value !== "Other"; });
+form.expYears.addEventListener("change", () => { document.getElementById("employerWrap").hidden = !form.expYears.value || form.expYears.value === "Fresher"; });
+
+/* ---------- Validation ---------- */
+function setErr(input, msg){ const f = input.closest(".field"); if(!f) return; f.classList.toggle("bad", !!msg); const e = f.querySelector(".err:not([data-for])"); if(e) e.textContent = msg || ""; }
+function clearErr(name){ const e = form.querySelector(`.err[data-for="${name}"]`); if(e) e.textContent = ""; }
+function setNamedErr(name,msg){ const e = form.querySelector(`.err[data-for="${name}"]`); if(e) e.textContent = msg; }
+
+function validate(){
+  let first = null;
+  const flag = (el, msg) => { setErr(el, msg); if(msg && !first) first = el; };
+
+  if(!form.querySelector('input[name="position"]:checked')){ setNamedErr("position","Choose the job you are applying for."); first = document.getElementById("pos-mlt"); }
+
+  form.querySelectorAll("input[required]:not([type=radio]):not([type=checkbox]), select[required]").forEach(el => {
+    if(!el.closest("[hidden]")) flag(el, el.value.trim() ? "" : "Please fill this in.");
+  });
+  const mobile = form.mobile;
+  if(mobile.value && !/^[6-9]\d{9}$/.test(mobile.value)) flag(mobile, "Enter a valid 10-digit mobile number.");
+  if(form.email.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email.value)) flag(form.email, "Enter a valid email, or leave it blank.");
+  if(form.dob.value){
+    const age = (Date.now() - new Date(form.dob.value)) / 31557600000;
+    if(age < 18 || age > 65) flag(form.dob, "Applicants must be 18 to 65 years old.");
+  }
+  const y = Number(form.passYear.value);
+  if(form.passYear.value && (y < 1985 || y > 2027)) flag(form.passYear, "Enter a year between 1985 and 2027.");
+  if(qualSel.value === "Other") flag(form.qualOther, form.qualOther.value.trim() ? "" : "Write your qualification.");
+  else setErr(form.qualOther, "");
+
+  const file = form.resume.files[0];
+  if(file && file.size > MAX_FILE_MB*1024*1024){ setNamedErr("resume", `This file is ${(file.size/1048576).toFixed(1)} MB. Upload a file under ${MAX_FILE_MB} MB.`); first = first || form.resume; }
+  else clearErr("resume");
+
+  if(!form.declare.checked){ setNamedErr("declare","Tick this box to submit."); first = first || form.declare; }
+  else clearErr("declare");
+
+  if(first){ first.scrollIntoView({behavior:"smooth", block:"center"}); first.focus({preventScroll:true}); }
+  return !first;
+}
+form.addEventListener("input", e => { if(e.target.closest(".field.bad")) setErr(e.target, ""); });
+form.addEventListener("change", e => { if(e.target.closest(".field.bad")) setErr(e.target, ""); });
+form.declare.addEventListener("change", () => clearErr("declare"));
+form.mobile.addEventListener("input", () => { form.mobile.value = form.mobile.value.replace(/\D/g, ""); });
+
+/* ---------- Submit ---------- */
+function refId(){
+  const d = new Date(), p = n => String(n).padStart(2,"0");
+  return `AMB-${String(d.getFullYear()).slice(2)}${p(d.getMonth()+1)}${p(d.getDate())}-${Math.random().toString(36).slice(2,6).toUpperCase()}`;
+}
+function readFile(file){
+  return new Promise((res, rej) => { const r = new FileReader(); r.onload = () => res(String(r.result).split(",")[1]); r.onerror = rej; r.readAsDataURL(file); });
+}
+
+const statusEl = document.getElementById("status"), btn = document.getElementById("submitBtn");
+const HELP = "If this keeps happening, call +91-8144301610 or email support@ambula.app.";
+form.addEventListener("submit", async e => {
+  e.preventDefault();
+  statusEl.className = "status"; statusEl.textContent = "";
+  if(!validate()){ statusEl.className = "status error"; statusEl.textContent = "Some fields need attention. Check the fields marked in red."; return; }
+  if(!SCRIPT_URL){ statusEl.className = "status error"; statusEl.textContent = "Applications are not open yet. For queries, call +91-8144301610 or email support@ambula.app."; return; }
+
+  btn.disabled = true; btn.textContent = "Submitting…";
+  const fd = new FormData(form);
+  const t = k => (fd.get(k) || "").trim();
+  const data = {
+    ref: refId(),
+    position: fd.get("position"),
+    fullName: t("fullName"), mobile: t("mobile"), onWhatsapp: form.onWhatsapp.checked ? "Yes" : "No", email: t("email"),
+    dob: t("dob"), gender: t("gender"), location: t("location"),
+    qualification: qualSel.value === "Other" ? "Other: " + t("qualOther") : qualSel.value,
+    institute: t("institute"), passYear: t("passYear"), regNo: t("regNo"),
+    expYears: t("expYears"), preEmpExp: t("preEmpExp"), employer: t("employer"),
+    currentSalary: t("currentSalary"), notice: t("notice"),
+    tests: fd.getAll("tests").join(", "),
+    machines: fd.getAll("machines").join(", "),
+    languages: fd.getAll("languages").join(", "),
+    source: t("source"), remarks: t("remarks")
+  };
+  try{
+    const file = form.resume.files[0];
+    if(file){ data.resumeName = file.name; data.resumeType = file.type || "application/octet-stream"; data.resumeData = await readFile(file); }
+    const res = await fetch(SCRIPT_URL, { method:"POST", headers:{"Content-Type":"text/plain;charset=utf-8"}, body: JSON.stringify(data) });
+    const out = await res.json().catch(() => ({}));
+    if(!res.ok || out.result !== "success") throw new Error(out.error || "Server did not confirm");
+    document.getElementById("doneName").textContent = data.fullName;
+    document.getElementById("doneRef").textContent = "Ref: " + data.ref;
+    form.hidden = true;
+    document.querySelector(".intro").hidden = true;
+    document.getElementById("done").hidden = false;
+    document.getElementById("done").scrollIntoView({behavior:"smooth", block:"start"});
+  }catch(err){
+    statusEl.className = "status error";
+    statusEl.textContent = "We couldn't submit your application. Check your internet and try again. " + HELP;
+    btn.disabled = false; btn.textContent = "Submit Application";
+  }
+});
+</script>
+</body>
+</html>
