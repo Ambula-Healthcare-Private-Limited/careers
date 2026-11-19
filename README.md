@@ -46,5 +46,5 @@ Each submission adds one row: date/time (IST), reference number (e.g. `AMB-26111
 - The query contacts (careers@ambula.app, +91-8144301610) appear in the job card, the footer (with a WhatsApp chat button), the thank-you message and error messages.
 
 - Until `SCRIPT_URL` is set, the form validates input but shows "Applications are not open yet" on submit.
-- Resume upload is optional; PDF, DOC, DOCX, JPG or PNG up to 5 MB.
+- Resume upload is required; PDF, DOC, DOCX, JPG or PNG up to 5 MB.
 - Applicant data is personal information. Share the sheet and the resume folder only with the HR team.

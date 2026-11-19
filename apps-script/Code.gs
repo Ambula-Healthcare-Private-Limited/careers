@@ -47,6 +47,9 @@ function doPost(e) {
     if (!data.fullName || !data.mobile || !data.position) {
       return json_({ result: 'error', error: 'Missing required fields' });
     }
+    if (!data.resumeData) {
+      return json_({ result: 'error', error: 'Resume is required' });
+    }
 
     data.submittedAt = Utilities.formatDate(new Date(), 'Asia/Kolkata', 'dd-MMM-yyyy HH:mm');
     data.status = 'New';
